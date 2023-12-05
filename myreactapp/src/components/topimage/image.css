@@ -1,0 +1,22 @@
+.image-div {
+    /* display: flex; */
+    width: 100%;
+    /* Set a specific height or as needed */
+    height: 500px; 
+    /* This makes sure the content inside the border is clipped */
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+
+@media (max-width: 700px) {
+    .image-div {
+        height: 300px;
+    }
+}

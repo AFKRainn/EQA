@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Navbar() {
-    const [isAuthenticated, setIsAuthenticated] = useState(true);
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     const user = "user"
 
     // useEffect(() => {
@@ -28,7 +28,7 @@ function Navbar() {
     // }, []);
 
     return (
-        <nav className="navbar navbar-expand navbar-light bg-light" style={{ padding: '1.5%' }}>
+        <nav className="navbar navbar-expand navbar-light bg-light" style={{ padding: '1%' }}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">Educational Quiz</Link>
                 <div className="d-flex justify-content-end" style={{ width: '100%' }}>
