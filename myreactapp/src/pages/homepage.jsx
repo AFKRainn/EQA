@@ -13,6 +13,9 @@ function HomePage() {
             <div className='exp-div'>
                 <Experience />
             </div>
+
+            <Image />
+
         </div>
     )
 }
