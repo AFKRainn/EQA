@@ -1,0 +1,48 @@
+.navbar {
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999; /* Ensure it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: all 0.3s ease;
+    height: 100px;
+    padding: 0 20px;
+  }
+  
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 70px;
+  }
+  
+  .nav-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centering the logo */
+  }
+  
+  .nav-section a {
+    margin: 0 10px;
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-section:not(.logo) {
+      display: none;
+    }
+    .navbar {
+      justify-content: center;
+    }
+  }
+  
